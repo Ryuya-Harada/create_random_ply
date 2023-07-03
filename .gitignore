@@ -1,0 +1,10 @@
+/.vscode/
+/build/
+/bin/
+Debug
+Release
+CMakeFiles
+CMakeScripts
+CMakeCache.txt
+Makefile
+/*.ply
