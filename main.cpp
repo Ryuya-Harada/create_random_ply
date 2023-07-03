@@ -5,5 +5,11 @@ int main(int num, char **kind){
     auto config = random_ply::Config(num, kind);
     if ( !config.Check() ) std::logic_error("Missing argument\n");
 
-    random_ply::CreatePLY(config);
+    if ( config.color ){
+        auto color = random_ply::Color(config);
+        color.CreatePLY();
+    }else {
+        auto mono = random_ply::Mono(config);
+        mono.CreatePLY();
+    }
 }

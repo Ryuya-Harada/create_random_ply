@@ -3,8 +3,11 @@
 /bin/
 Debug
 Release
-CMakeFiles
+CMakeFiles/
 CMakeScripts
 CMakeCache.txt
 Makefile
+cpp_cmake
+/*.cmake
 /*.ply
+/*.txt

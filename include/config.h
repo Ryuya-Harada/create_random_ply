@@ -29,7 +29,8 @@ namespace random_ply{
         };
         bool Check(){
             if ( coor[0] == 0 || size == 0 ) return false;
-            if ( file.substr(file.rfind(".")) != ".ply" ) file += ".ply";
+            if ( file.empty() ) file = "test.ply"; 
+            else if ( file.substr(file.rfind(".")) != ".ply" ) file += ".ply";
             for (int i = 1; i < coor.size(); i++)
                 if ( coor[i] == 0 ) coor[i] = coor[0];
             return true;
