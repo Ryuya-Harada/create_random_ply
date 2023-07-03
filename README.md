@@ -1,4 +1,4 @@
-# create ply file
+# Create ply file
 ## Requirements
  - g++ (tested 11.3.0) 
  - CMake 3.2 (tested 3.27.20230614-g12518c7)
