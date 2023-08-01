@@ -12,4 +12,14 @@ int main(int num, char **kind){
         auto mono = random_ply::Mono(config);
         mono.CreatePLY();
     }
+    /*
+    vector<string> header;
+    string buf;
+    while (getline(ifs, buff))
+    {
+    if(buff=="end_header") break;
+    header.pushback(buff);
+    }
+    
+    */
 }
